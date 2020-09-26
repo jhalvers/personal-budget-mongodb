@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <!-- This is a SEO Change: Added meta tag for content type on the page -->
+    <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+    <!-- This is a SEO Change: Added meta tag for author -->
+    <meta name="author" content="Fabio Nolasco">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Budget</title>
     <link rel="stylesheet" href="reset.css">
@@ -9,26 +12,37 @@
 </head>
 <body>
 
-    <dnav class="menu">
+    <!-- This is a a11y Change: added aria-label to say what is the purpose of the top of the page -->
+    <nav class="menu" aria-label="navigation bar">
+        <!-- This is a Semantic HTML Change -->
         <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/login.html">Login</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="login.html">Login</a></li>
             <li><a href="https://google.com">Google</a></li>
+            <!-- This is a a11y Change: added a skip to content link to skip to main content -->
+            <a class="skip-to-content-link" href="#main">
+                Skip to content
+            </a>
         </ul>
-    </dnav>
-
-    <div class="hero">
+    </nav>
+<head>
+    <!-- This is a SEO Change: Added meta content for purpose of web application -->
+    <meta name="description" content="This is a web application that gives personal budget advice">
+</head>
+    <main class="hero">
+        <!-- This is a Semantic HTML Change -->
         <h1>Personal Budget</h1>
         <h2>A personal-budget management app</h2>
-    </div>
+    </main>
 
     <div class="container center">
 
         <div class="page-area">
 
             <div class="text-box">
-                <h1>Stay on track</h1>
+        <!-- This is a a11y Change: Changed h1 to h2 so that there is only one h1 -->
+                <h2>Stay on track</h2>
                 <p>
                     Do you know where you are spending your money? If you really stop to track it down,
                     you would get surprised! Proper budget management depends on real data... and this
@@ -37,14 +51,14 @@
             </div>
     
             <div class="text-box">
-                <h1>Alerts</h1>
+                <h2>Alerts</h2>
                 <p>
                     What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
                 </p>
             </div>
     
             <div class="text-box">
-                <h1>Results</h1>
+                <h2>Results</h2>
                 <p>
                     People who stick to a financial plan, budgeting every expense, get out of debt faster!
                     Also, they to live happier lives... since they expend without guilt or fear... 
@@ -53,14 +67,14 @@
             </div>
     
             <div class="text-box">
-                <h1>Free</h1>
+                <h2>Free</h2>
                 <p>
                     This app is free!!! And you are the only one holding your data!
                 </p>
             </div>
     
             <div class="text-box">
-                <h1>Stay on track</h1>
+                <h2>Stay on track</h2>
                 <p>
                     Do you know where you are spending your money? If you really stop to track it down,
                     you would get surprised! Proper budget management depends on real data... and this
@@ -69,14 +83,14 @@
             </div>
     
             <div class="text-box">
-                <h1>Alerts</h1>
+                <h2>Alerts</h2>
                 <p>
                     What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
                 </p>
             </div>
     
             <div class="text-box">
-                <h1>Results</h1>
+                <h2>Results</h2>
                 <p>
                     People who stick to a financial plan, budgeting every expense, get out of debt faster!
                     Also, they to live happier lives... since they expend without guilt or fear... 
@@ -85,7 +99,7 @@
             </div>
     
             <div class="text-box">
-                <h1>Free</h1>
+                <h2>Free</h2>
                 <p>
                     This app is free!!! And you are the only one holding your data!
                 </p>
@@ -94,7 +108,7 @@
         </div>
 
     </div>
-
+        <!-- This is a Semantic HTML Change -->
     <footer class="bottom">
         <div class="center">
             All rights reserved &copy; Fabio Nolasco
