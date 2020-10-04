@@ -10,16 +10,16 @@
             "budget":75
             },
             {"title":"College",
-                "budget":500
+                "budget":400
                 },
                 {"title":"Electricity",
-                    "budget":50
+                    "budget":100
                     },
                     {"title":"Water",
-                        "budget":50
+                        "budget":40
                         },
                         {"title":"Grocery",
-                            "budget":110
+                            "budget":150
                             }
     
   ]
