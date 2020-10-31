@@ -149,12 +149,13 @@ function createChart() {
 });
 }
     function getBudget() {
-    axios.get('http://localhost:3000/budget')
+    axios.get('/budget')
     .then(function(res){
-        console.log(res);
-        for (var i = 0; i < res.data.myBudget.length; i++) {
-            dataSource.datasets[0].data[i] = res.data.myBudget[i].budget;
-            dataSource.labels[i] = res.data.myBudget[i].title;
+        console.log(res.data);
+        for (var i = 0; i < res.data.length; i++) {
+            dataSource.datasets[0].data[i] = res.data[i].budget;
+            dataSource.labels[i] = res.data[i].title;
+            dataSource.datasets[0].backgroundColor[i]=res.data[i].color;
         }
         var data = dataSource.datasets[0].data;
                 var labels = dataSource.labels;
@@ -206,7 +207,7 @@ var key = function(d){ return d.data.label; };
 
 var color = d3.scale.ordinal()
 	.domain(["Lorem ipsum", "dolor sit", "amet", "consectetur", "adipisicing", "elit", "sed", "do", "eiusmod", "tempor", "incididunt"])
-	.range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+	.range(dataSource.datasets[0].backgroundColor);
 
 
 d3.select(".randomize")
